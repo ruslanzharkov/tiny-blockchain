@@ -11,3 +11,7 @@ class Block {
         )
     }
 }
+
+const createGenezisBlock = () => new Block(0, Date.now(), 'Genesis Block', '0');
+
+constNextBlock = (lastBlock, data) => new Block(lastBlock.index + 1, Date.now(), data, lastBlock.thisHash);
